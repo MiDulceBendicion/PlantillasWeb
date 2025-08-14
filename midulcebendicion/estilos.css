@@ -49,8 +49,19 @@ body {
 
 .logo-encabezado {
   height: 60px;
+  margin-right: 15px; /* Espacio entre el logo y el nombre */
 }
 
+
+/* Nombre de la pastelería */
+.nombre-pasteleria {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  letter-spacing: 2px;
+  font-family: 'Arial', sans-serif;
+}
 /* Catálogo */
 .categoria {
   padding: 20px;
@@ -111,3 +122,4 @@ body {
     max-width: 100%;
   }
 }
+
