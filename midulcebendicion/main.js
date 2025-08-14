@@ -1,9 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => { 
+document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
-    const intro = document.getElementById('intro');
-    const catalogo = document.getElementById('catalogo');
+    // Ocultar intro
+    document.getElementById('intro').style.display = 'none';
 
-    intro.classList.add('hidden');
-    catalogo.classList.add('visible');
-  }, 3000);
+    // Mostrar encabezado y catálogo
+    document.querySelector('.encabezado').classList.remove('oculto');
+    document.getElementById('catalogo').classList.remove('oculto');
+  }, 3000); // 3 segundos de presentación
 });
