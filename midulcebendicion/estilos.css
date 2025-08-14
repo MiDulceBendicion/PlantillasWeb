@@ -61,7 +61,7 @@ body {
   color: #333;
   margin: 0;
   letter-spacing: 2px;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Mozilla Headline', sans-serif;
   text-transform: uppercase; /* Hace que el texto esté en mayúsculas */
 }
 
@@ -137,3 +137,4 @@ body {
     max-width: 100%;
   }
 }
+
