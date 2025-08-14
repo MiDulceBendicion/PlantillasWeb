@@ -1,4 +1,5 @@
 /* Fondo y estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -61,7 +62,7 @@ body {
   color: #333;
   margin: 0;
   letter-spacing: 2px;
-  font-family: 'Mozilla Headline', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase; /* Hace que el texto esté en mayúsculas */
 }
 
@@ -137,4 +138,5 @@ body {
     max-width: 100%;
   }
 }
+
 
