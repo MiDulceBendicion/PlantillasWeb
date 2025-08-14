@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff8f4;
+  color: #333;
+}
+
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff8f4;
+  transition: opacity 1s ease-in-out;
+}
+
+.logo-inicio {
+  width: 200px;
+  animation: fadeInScale 2s ease-in-out;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.categoria {
+  padding: 20px;
+}
+
+.categoria h2 {
+  border-bottom: 2px solid #f8caca;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.producto {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 300px;
+  flex: 1 1 250px;
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.producto h3 {
+  margin: 10px 0 5px;
+}
+
+.producto p {
+  margin: 0 0 10px;
+}
+
+.producto a {
+  background: #25d366;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+#intro.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#catalogo {
+  opacity: 0;
+  display: none;
+  transition: opacity 1s ease-in-out;
+}
+
+#catalogo.visible {
+  display: block;
+  opacity: 1;
+}
