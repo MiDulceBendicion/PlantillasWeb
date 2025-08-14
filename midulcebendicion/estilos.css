@@ -1,4 +1,12 @@
-/* Presentación inicial */
+/* Fondo y estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff8f4;
+  color: #333;
+}
+
+/* Presentación inicial del logo */
 #intro {
   position: fixed;
   inset: 0;
@@ -9,11 +17,12 @@
   z-index: 999;
 }
 
-.logo-intro {
+.logo-inicio {
   width: 200px;
   animation: fadeInScale 2s ease-in-out;
 }
 
+/* Animación para la transición */
 @keyframes fadeInScale {
   0% {
     opacity: 0;
@@ -25,21 +34,17 @@
   }
 }
 
-/* Ocultar elementos */
-.oculto {
-  display: none;
-}
-
 /* Encabezado */
 .encabezado {
   background: #fff8f4;
   padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 100;
+  transition: opacity 1s ease-in-out;
 }
 
 .logo-encabezado {
@@ -47,13 +52,6 @@
 }
 
 /* Catálogo */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #fff8f4;
-  color: #333;
-}
-
 .categoria {
   padding: 20px;
 }
@@ -101,7 +99,12 @@ body {
   display: inline-block;
 }
 
-/* Responsive para móviles */
+/* Ocultar elementos al inicio */
+.oculto {
+  display: none;
+}
+
+/* Responsive */
 @media (max-width: 600px) {
   .producto {
     flex: 1 1 100%;
