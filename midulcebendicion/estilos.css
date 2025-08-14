@@ -37,10 +37,11 @@ body {
 /* Encabezado */
 .encabezado {
   background: #fff8f4;
-  padding: 10px 20px;
+  padding: 15px 20px; /* Un poco más de espacio en los lados */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
+  justify-content: space-between; /* Para separar el logo y el nombre */
   position: sticky;
   top: 0;
   z-index: 100;
@@ -50,18 +51,20 @@ body {
 .logo-encabezado {
   height: 60px;
   margin-right: 15px; /* Espacio entre el logo y el nombre */
+  transition: height 0.3s ease-in-out; /* Transición suave al cambiar tamaño */
 }
-
 
 /* Nombre de la pastelería */
 .nombre-pasteleria {
-  font-size: 24px;
+  font-size: 26px; /* Tamaño un poco mayor */
   font-weight: bold;
   color: #333;
   margin: 0;
   letter-spacing: 2px;
   font-family: 'Arial', sans-serif;
+  text-transform: uppercase; /* Hace que el texto esté en mayúsculas */
 }
+
 /* Catálogo */
 .categoria {
   padding: 20px;
@@ -116,10 +119,21 @@ body {
 }
 
 /* Responsive */
+@media (max-width: 768px) {
+  .encabezado {
+    padding: 15px 10px; /* Reducir el padding en pantallas pequeñas */
+  }
+  .logo-encabezado {
+    height: 50px; /* Reducir el tamaño del logo en pantallas pequeñas */
+  }
+  .nombre-pasteleria {
+    font-size: 20px; /* Reducir el tamaño del texto del nombre */
+  }
+}
+
 @media (max-width: 600px) {
   .producto {
     flex: 1 1 100%;
     max-width: 100%;
   }
 }
-
