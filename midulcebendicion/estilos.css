@@ -1,20 +1,15 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #fff8f4;
-  color: #333;
-}
-
+/* Presentación inicial */
 #intro {
+  position: fixed;
+  inset: 0;
+  background-color: #fff8f4;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #fff8f4;
-  transition: opacity 1s ease-in-out;
+  z-index: 999;
 }
 
-.logo-inicio {
+.logo-intro {
   width: 200px;
   animation: fadeInScale 2s ease-in-out;
 }
@@ -28,6 +23,35 @@ body {
     opacity: 1;
     transform: scale(1);
   }
+}
+
+/* Ocultar elementos */
+.oculto {
+  display: none;
+}
+
+/* Encabezado */
+.encabezado {
+  background: #fff8f4;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-encabezado {
+  height: 60px;
+}
+
+/* Catálogo */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff8f4;
+  color: #333;
 }
 
 .categoria {
@@ -77,18 +101,10 @@ body {
   display: inline-block;
 }
 
-#intro.hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-#catalogo {
-  opacity: 0;
-  display: none;
-  transition: opacity 1s ease-in-out;
-}
-
-#catalogo.visible {
-  display: block;
-  opacity: 1;
+/* Responsive para móviles */
+@media (max-width: 600px) {
+  .producto {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
