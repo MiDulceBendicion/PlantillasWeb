@@ -93,7 +93,7 @@ body {
 }
 
 .producto img {
-  width: 100%;
+  width: 70%;
   border-radius: 8px;
 }
 
@@ -138,6 +138,7 @@ body {
     max-width: 100%;
   }
 }
+
 
 
 
