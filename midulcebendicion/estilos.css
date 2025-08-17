@@ -80,7 +80,7 @@ body {
 .productos {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
 }
 
 .producto {
@@ -138,6 +138,7 @@ body {
     max-width: 100%;
   }
 }
+
 
 
 
