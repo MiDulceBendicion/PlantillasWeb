@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #fff8f4;
-  color:#2988A8;
+  color:CC9966;
 }
 
 /* Presentación inicial del logo */
@@ -138,6 +138,7 @@ body {
     max-width: 100%;
   }
 }
+
 
 
 
